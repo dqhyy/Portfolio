@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header styling */
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 70px;
+    background: #be3144;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+#nav li {
+    display: inline-block;
+}
+
+#nav li a {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 0 22px;
+}
+
+#nav li:hover a {
+    background-color: #45567d;
+}
+
+/* About section */
+.about {
+    width: 100%;
+    height: 820px;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+}
+
+.main-about-intro h1 {
+    color: #f0f0f0;
+    font-size: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.main-about-intro h2 {
+    color: #be3144;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 200;  
+}
+
+/* Work (project) section */
+.work {
+    background-color: #45567d;
+    padding: 50px 0;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.work h1 {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 36px;
+}
+
+.work hr {
+    width: 500px;
+    margin-bottom: 50px;
+    border: 1px solid #fff;
+}
+
+/* Project section layout */
+.project {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 40px;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto 40px;
+}
+
+.project .project-item {
+    background-color: #303841;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.project .images {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project .project-title {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px;
+}
+
+.project .code {
+    color: orange;
+    display: none;
+}
+
+.project-item:hover .code {
+    display: inline-block;
+}
+
+.project-button {
+    color: #fff;
+    font-size: 22px; 
+    background: #303841; 
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease; 
+    display: inline-flex; 
+    align-items: center;
+}
+
+.project-button i {
+    margin-left: 8px; 
+}
+
+.project-button:hover {
+    background: #be3144;
+}
+
+/* Contact section */
+#contact {
+    height: 700px; 
+    background-color: #303841;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+#contact h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+#contact p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    font-style: italic;
+    margin-bottom: 40px; 
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+.social-item {
+    padding: 20px;
+    font-size: 25px;
+    display: inline-flex; 
+    align-items: center; 
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.social-item a {
+    color: #fff;
+    text-decoration: none; 
+}
+
+.social-item .icon {
+    margin-right: 8px;
+}
+
+.social-item:hover {
+    transform: translateY(-2px); 
+}
+
+#main .hr-end {
+    height: 5px;
+    background-color: #be3144;
+    width: 100%;
+    border: none;
+}
+
+/* Footer */
+#footer {
+    padding: 30px;
+    background-color: #303841;
+    color: #fff; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#footer p {
+    padding: 0 90px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #fff;
+}
